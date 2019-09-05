@@ -99,9 +99,11 @@ public class ChatClient {
 	
 	public void ProccesMessage(String message) {
 		if(message.contains(DefaultOptions.SERVER_MESSAGE)) {
-			MessagePrinter.ShowText(message);}
+			MessagePrinter.ShowText(message);
+			}
 		else {
-			
+			// cambiar por el tratamiento a los mensajes ajenos al servidor
+			MessagePrinter.ShowText(message);
 		}
 	}
 	
